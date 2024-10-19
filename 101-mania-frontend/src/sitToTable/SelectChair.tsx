@@ -1,7 +1,10 @@
 import "./SelectChair.css";
 import chair from "../assets/chair-top.png";
 import table from "../assets/table-top.png";
+import {useState} from "react";
 function SelectChair() {
+
+    const [selectedChair, setSelectedChair] = useState(0)
 
     return (
         <div className="main-container">
@@ -11,21 +14,21 @@ function SelectChair() {
             </div>
             <div className="sitting-container">
                 <div className="chair-container">
-                    <img src={chair} alt="" style={{rotate: "-90deg"}} className="chair-image"/>
+                    <img src={chair} alt="" style={{rotate: "-90deg"}} className="chair-image" onClick={() => setSelectedChair(0)}/>
                 </div>
                 <div className="table-container">
                     <div className="chair-container">
-                        <img src={chair} alt="" className="chair-image"/>
+                        <img src={chair} alt="" className="chair-image" onClick={() => setSelectedChair(1)}/>
                     </div>
                     <div className="table-container">
                         <img src={table} alt="" className="table-image"/>
                     </div>
                     <div className="chair-container">
-                        <img src={chair} alt="" style={{rotate: "180deg"}} className="chair-image"/>
+                        <img src={chair} alt="" style={{rotate: "180deg"}} className="chair-image" onClick={() => setSelectedChair(2)}/>
                     </div>
                 </div>
                 <div className="chair-container">
-                    <img src={chair} alt="" style={{rotate: "90deg"}} className="chair-image"/>
+                    <img src={chair} alt="" style={{rotate: "90deg"}} className="chair-image" onClick={() => setSelectedChair(3)}/>
                 </div>
             </div>
         </div>
