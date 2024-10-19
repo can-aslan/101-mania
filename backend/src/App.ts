@@ -16,7 +16,7 @@ const io = new Server(httpServer, {
 
 // Setup a basic route to test the server
 app.get("/", (req, res) => {
-  res.send("101 Mania game server started successfully.");
+  res.send("101 Mania game server is running.");
 });
 
 // Handle Socket.IO connections
