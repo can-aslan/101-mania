@@ -1,0 +1,35 @@
+.chair-text {
+    width: 60%;
+    margin: 0 auto 40px auto;
+}
+
+.main-container {
+    width: 100%;
+}
+
+.sitting-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.chair-image {
+    width: 130px;
+    height: auto;
+    margin: 0;
+}
+
+.table-image {
+    width: 220px;
+    height: auto;
+    margin: 0;
+}
+
+.chair-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
